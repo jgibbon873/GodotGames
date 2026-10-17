@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://kt4n7l7k8qxh"]
+
+[ext_resource type="Script" uid="uid://k4825cltjlm8" path="res://features/characters/character.gd" id="1_lrhn5"]
+[ext_resource type="Script" uid="uid://cl4idgqkq8n4a" path="res://features/characters/item_component.gd" id="2_my7n2"]
+[ext_resource type="Script" uid="uid://cbg4j1lyaw76k" path="res://features/characters/health_component.gd" id="3_dp8ca"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wbt44"]
+size = Vector2(100, 150)
+
+[node name="Character" type="CharacterBody2D" unique_id=2082745890]
+input_pickable = true
+script = ExtResource("1_lrhn5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1046098307]
+unique_name_in_owner = true
+shape = SubResource("RectangleShape2D_wbt44")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=957650442]
+unique_name_in_owner = true
+
+[node name="ItemComponent" type="Node" parent="." unique_id=1818731863]
+unique_name_in_owner = true
+script = ExtResource("2_my7n2")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=689845464]
+unique_name_in_owner = true
+script = ExtResource("3_dp8ca")

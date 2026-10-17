@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dh4lc3g8lqevq"]
+
+[ext_resource type="Script" uid="uid://dmhh26mq30760" path="res://features/adventure/map_partition/game_view/turn_manager.gd" id="1_kib82"]
+
+[node name="TurnManager" type="Node" unique_id=561697685]
+script = ExtResource("1_kib82")

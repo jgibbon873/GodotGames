@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ActionResource" format=3 uid="uid://b53tgjev3by6w"]
+
+[ext_resource type="Script" uid="uid://c46wex1iadwe" path="res://resources/action_resources/action_resource.gd" id="1_nx1dt"]
+
+[resource]
+script = ExtResource("1_nx1dt")
+action_name = "EldritchBlast"
+skill_check = 4
+strength = 75
+cell_range = 2
+metadata/_custom_type_script = "uid://c46wex1iadwe"

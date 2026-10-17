@@ -1,0 +1,31 @@
+class_name EnemyManager
+extends Node
+
+const CHARACTER: PackedScene = preload("uid://kt4n7l7k8qxh")
+
+## Spawns a new enemy and adds it to the pool
+func spawn_enemy(character_type: CharacterTypeResource = null) -> Character:
+	var enemy: Character = CHARACTER.instantiate() as Character
+	var character: CharacterTypeResource = character_type if character_type != null else preload("res://resources/character_types/archer.tres")
+	enemy.character_type = character
+	enemy.team = EnumService.Team.ENEMIES
+	enemy.visible = false
+	add_child(enemy)
+	return enemy
+
+## Spawn multiple enemies from composition dictionary
+func spawn_enemies_from_composition(composition: Dictionary[EnumService.CharacterType, int]) -> Array[Node]:
+	var spawned: Array[Node] = []
+	for monster_type: EnumService.CharacterType in composition:
+		var monster_name: String = EnumService.CharacterType.find_key(monster_type).to_lower()
+		var character_path: String = "res://resources/character_types/%s.tres" % monster_name
+		if not ResourceLoader.exists(character_path):
+			push_error("EnemyManager: no CharacterTypeResource at %s" % character_path)
+			continue
+		var character: CharacterTypeResource = load(character_path)
+		var count: int = composition[monster_type]
+		for i: int in count:
+			var enemy: Character = spawn_enemy(character)
+			if enemy:
+				spawned.append(enemy)
+	return spawned

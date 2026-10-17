@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bsc4prmqm6yht"]
+
+[ext_resource type="Script" uid="uid://7iirc0w2rw01" path="res://features/adventure/bottom_partition/hero_portrait.gd" id="1_g2fve"]
+[ext_resource type="PackedScene" uid="uid://cif8amwicbdro" path="res://features/adventure/bottom_partition/portrait.tscn" id="1_vx68i"]
+
+[node name="HeroPortrait" unique_id=1828340089 instance=ExtResource("1_vx68i")]
+script = ExtResource("1_g2fve")

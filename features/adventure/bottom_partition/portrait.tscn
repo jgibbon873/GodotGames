@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cif8amwicbdro"]
+
+[ext_resource type="Script" uid="uid://c855pofk72vxp" path="res://features/adventure/bottom_partition/portrait.gd" id="1_0frug"]
+
+[node name="Portrait" type="TextureRect" unique_id=1828340089]
+texture_filter = 3
+expand_mode = 3
+stretch_mode = 5
+script = ExtResource("1_0frug")
+
+[node name="CharacterActivateButton" type="Button" parent="." unique_id=1641786629]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "ACTIVATE"

@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+nul
+NUL
+*.TMP
+*~
+addons/ziva_agent/zivacode/
+*.TMP
+*~

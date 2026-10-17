@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d3cfxjt8r661d"]
+
+[ext_resource type="Texture2D" uid="uid://e1v0qtxi0n6o" path="res://art/environment/wall_tiles.png" id="1_dcrx1"]
+[ext_resource type="Script" uid="uid://dxrongffuuhkd" path="res://features/adventure/map_partition/game_view/combat_map.gd" id="2_p6oy1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wall_tiles"]
+texture = ExtResource("1_dcrx1")
+texture_region_size = Vector2i(160, 160)
+0:0/0 = 0
+0:0/0/custom_data_1 = true
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-80, -80, 80, -80, 80, 80, -80, 80)
+0:1/0/custom_data_0 = true
+0:2/0 = 0
+0:2/0/custom_data_0 = true
+0:2/0/custom_data_1 = true
+
+[sub_resource type="TileSet" id="TileSet_kbce5"]
+tile_size = Vector2i(160, 160)
+physics_layer_0/collision_layer = 1
+custom_data_layer_0/name = "solid"
+custom_data_layer_0/type = 1
+custom_data_layer_1/name = "passable"
+custom_data_layer_1/type = 1
+sources/0 = SubResource("TileSetAtlasSource_wall_tiles")
+
+[node name="CombatMap" type="TileMapLayer" unique_id=2121528625]
+tile_set = SubResource("TileSet_kbce5")
+script = ExtResource("2_p6oy1")

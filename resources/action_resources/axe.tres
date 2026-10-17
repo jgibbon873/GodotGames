@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ActionResource" format=3 uid="uid://c80hyjk4w630b"]
+
+[ext_resource type="Script" uid="uid://c46wex1iadwe" path="res://resources/action_resources/action_resource.gd" id="1_b7kql"]
+
+[resource]
+script = ExtResource("1_b7kql")
+action_name = "Axe"
+action_type = 2
+skill_check = 3
+strength = 100
+cell_range = 1
+metadata/_custom_type_script = "uid://c46wex1iadwe"

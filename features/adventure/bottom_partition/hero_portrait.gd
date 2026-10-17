@@ -1,0 +1,2 @@
+class_name HeroPortrait
+extends Portrait

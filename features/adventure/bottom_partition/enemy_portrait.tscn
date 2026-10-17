@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://g2o126jq2tp0"]
+
+[ext_resource type="Script" uid="uid://d3fqfipkwvvlx" path="res://features/adventure/bottom_partition/enemy_portrait.gd" id="1_efw3x"]
+[ext_resource type="PackedScene" uid="uid://cif8amwicbdro" path="res://features/adventure/bottom_partition/portrait.tscn" id="1_gjm13"]
+
+[node name="EnemyPortrait" unique_id=1828340089 instance=ExtResource("1_gjm13")]
+script = ExtResource("1_efw3x")

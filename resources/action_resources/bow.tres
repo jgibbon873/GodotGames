@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ActionResource" format=3 uid="uid://c74a3ao4crmx4"]
+
+[ext_resource type="Script" uid="uid://c46wex1iadwe" path="res://resources/action_resources/action_resource.gd" id="1_1x55r"]
+
+[resource]
+script = ExtResource("1_1x55r")
+action_name = "Bow"
+action_type = 4
+strength = 50
+cell_range = 6
+metadata/_custom_type_script = "uid://c46wex1iadwe"

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://blxk28ybkwrhk"]
+
+[node name="ActionButton" type="Button" unique_id=784219073]
+offset_right = 68.0
+offset_bottom = 31.0
+text = "ACTION"

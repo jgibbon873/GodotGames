@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CharacterTypeResource" format=3 uid="uid://bwjlnalfqsycm"]
+
+[ext_resource type="Script" uid="uid://c46wex1iadwe" path="res://resources/action_resources/action_resource.gd" id="1_ycyu5"]
+[ext_resource type="Resource" uid="uid://b53tgjev3by6w" path="res://resources/action_resources/eldritch_blast.tres" id="2_8ube7"]
+[ext_resource type="Script" uid="uid://bd4vh1sotsjgs" path="res://resources/character_types/character_type_resource.gd" id="2_fu6kx"]
+[ext_resource type="Texture2D" uid="uid://ctyym7p86mnkw" path="res://art/game_sprites/sorceress_100x160.jpg" id="3_13vi3"]
+[ext_resource type="Texture2D" uid="uid://nxi4lfl6uia0" path="res://art/portraits/sorceress_portrait.jpg" id="4_3sn3s"]
+
+[resource]
+script = ExtResource("2_fu6kx")
+actions = Array[ExtResource("1_ycyu5")]([ExtResource("2_8ube7")])
+appearance = ExtResource("3_13vi3")
+character_type = 2
+movement = 4
+portrait = ExtResource("4_3sn3s")
+vision_range = 6
+metadata/_custom_type_script = "uid://bd4vh1sotsjgs"
