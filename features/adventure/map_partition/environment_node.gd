@@ -22,14 +22,14 @@ func _on_move_completed(character: Character) -> void:
 	for opponent: Character in opponents:
 		var distance: int = WalkPathfinder.cell_distance(origin_cell, opponent.cell())
 		if hero:
-			if distance <= character.character_type.vision_range:
+			if distance <= character.character_resource.vision_range:
 				opponent.visible = true
-			if distance <= opponent.character_type.vision_range:
+			if distance <= opponent.character_resource.vision_range:
 				opponent.alerted.append(character)
 		else:
-			if distance <= character.character_type.vision_range:
+			if distance <= character.character_resource.vision_range:
 				character.alerted.append(opponent)
-			if distance <= opponent.character_type.vision_range:
+			if distance <= opponent.character_resource.vision_range:
 				character.visible = true
 	_check_combat_start(character)
 
@@ -42,7 +42,7 @@ func _check_combat_start(character: Character) -> void:
 	for opponent: Character in opponents:
 		var opponent_cell: Vector2i = opponent.cell()
 		var distance: int = WalkPathfinder.cell_distance(character_cell, opponent_cell)
-		if distance <= opponent.character_type.vision_range and distance <= character.character_type.vision_range:
+		if distance <= opponent.character_resource.vision_range and distance <= character.character_resource.vision_range:
 			turn_manager.change_mode(EnumService.Mode.COMBAT)
 
 #Deadcode, kept for later development.

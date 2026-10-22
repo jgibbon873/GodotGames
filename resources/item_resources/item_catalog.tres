@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemCatalog" format=3 uid="uid://dm5e1gi4aylnk"]
+
+[ext_resource type="Script" uid="uid://dt4v1tge58y0s" path="res://resources/item_resources/item_resource.gd" id="1_vrblu"]
+[ext_resource type="Script" uid="uid://d365xbh4m4j65" path="res://resources/item_resources/item_catalog.gd" id="2_uv6bq"]
+[ext_resource type="Resource" uid="uid://eeqd244qkra5" path="res://resources/item_resources/chest.tres" id="2_v00fp"]
+
+[resource]
+script = ExtResource("2_uv6bq")
+items = Dictionary[int, ExtResource("1_vrblu")]({
+0: ExtResource("2_v00fp")
+})
+metadata/_custom_type_script = "uid://d365xbh4m4j65"

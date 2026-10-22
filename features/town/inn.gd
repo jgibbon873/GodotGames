@@ -16,10 +16,10 @@ func _ready() -> void:
 	spawn_hero()
 
 ##Spawns a new hero and adds it to the pool.
-func spawn_hero(character_type: CharacterTypeResource = null) -> Character:
+func spawn_hero(character_type: CharacterResource = null) -> Character:
 	var hero: Character = CHARACTER.instantiate() as Character
-	var character: CharacterTypeResource = character_type if character_type != null else preload("res://resources/character_types/archer.tres")
-	hero.character_type = character
+	var character: CharacterResource = character_type if character_type != null else preload("res://resources/character_resources/archer.tres")
+	hero.character_resource = character
 	hero.team = EnumService.Team.HEROES
 	hero.visible = false
 	add_child(hero)

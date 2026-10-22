@@ -1,25 +1,33 @@
 class_name Item
 extends Area2D
 
-var item_resource: ItemResource
+const CATALOG: ItemCatalog = preload("uid://dm5e1gi4aylnk")
+const ITEM: PackedScene = preload("uid://cvihwam8u3bx7")
+
+var item_resource: ItemResource = null:
+	set(new_resource):
+		if item_resource:
+			push_error("Item %s: item_resource already set (%s); ignored %s" % [name, item_resource, new_resource])
+			return
+		item_resource = new_resource
 
 @onready var sprite_2d: Sprite2D = %Sprite2D
 
 func _ready() -> void:
-	# Auto-setup for items placed in editor
-	if item_resource and not has_meta("item_resource"):
-		setup(item_resource)
+	if not item_resource:
+		push_warning("%s: ItemResource not ready in _ready()" % name)
+		return
+	sprite_2d.texture = item_resource.sprite
 	collision_mask = 0
 
-## Call this after instantiating the item in code
-func setup(resource: ItemResource) -> void:
-	if not resource:
-		push_error("Item: No ItemResource provided")
-		return
-	item_resource = resource
-	set_meta("item_resource", resource)
-	_apply_visuals()
+func cell() -> Vector2i:
+	return TileMapService.cell_at(global_position)
 
-func _apply_visuals() -> void:
-	if sprite_2d and item_resource.sprite:
-		sprite_2d.texture = item_resource.sprite
+static func create_item(item_type: EnumService.ItemType) -> Item:
+	var resource: ItemResource = CATALOG.items.get(item_type)
+	if resource == null:
+		push_error("Item.create_item(): no catalog entry for %s" % EnumService.ItemType.find_key(item_type))
+		return null
+	var item: Item = ITEM.instantiate()
+	item.item_resource = resource
+	return item

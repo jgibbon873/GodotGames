@@ -10,11 +10,14 @@ enum ActionType{
 	}
 
 enum CharacterType{
-	Archer,
-	Skeleton,
-	Sorceress,
-	Swordsman,
+	ARCHER,
+	SKELETON,
+	SORCERESS,
 	}
+
+enum ItemType{
+	CHEST,
+}
 
 enum Mode {
 	DEFAULT = -1,

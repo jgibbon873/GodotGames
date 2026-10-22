@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctyym7p86mnkw"
-path="res://.godot/imported/sorceress_100x160.jpg-2a2332810da98ec6ee2734b7407aea8d.ctex"
+uid="uid://cgryc5qg5idst"
+path="res://.godot/imported/wizard_100x160.jpg-5f2757bba83047ca0f11f35e592fd6ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/game_sprites/sorceress_100x160.jpg"
-dest_files=["res://.godot/imported/sorceress_100x160.jpg-2a2332810da98ec6ee2734b7407aea8d.ctex"]
+source_file="res://art/game_sprites/characters/wizard_100x160.jpg"
+dest_files=["res://.godot/imported/wizard_100x160.jpg-5f2757bba83047ca0f11f35e592fd6ee.ctex"]
 
 [params]
 

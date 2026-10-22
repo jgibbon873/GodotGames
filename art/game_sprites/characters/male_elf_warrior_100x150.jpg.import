@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgryc5qg5idst"
-path="res://.godot/imported/wizard_100x160.jpg-bbb5737c630483e7a2060723defc38f5.ctex"
+uid="uid://df8q800acoo3d"
+path="res://.godot/imported/male_elf_warrior_100x150.jpg-f498d471866fa2f20812656b8f10017a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/game_sprites/wizard_100x160.jpg"
-dest_files=["res://.godot/imported/wizard_100x160.jpg-bbb5737c630483e7a2060723defc38f5.ctex"]
+source_file="res://art/game_sprites/characters/male_elf_warrior_100x150.jpg"
+dest_files=["res://.godot/imported/male_elf_warrior_100x150.jpg-f498d471866fa2f20812656b8f10017a.ctex"]
 
 [params]
 

@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="CharacterTypeResource" format=3 uid="uid://7xuow76mrpbq"]
 
 [ext_resource type="Script" uid="uid://c46wex1iadwe" path="res://resources/action_resources/action_resource.gd" id="1_q0ctg"]
-[ext_resource type="Script" uid="uid://bd4vh1sotsjgs" path="res://resources/character_types/character_type_resource.gd" id="2_6kwis"]
+[ext_resource type="Script" uid="uid://bd4vh1sotsjgs" path="res://resources/character_resources/character_resource.gd" id="2_6kwis"]
 [ext_resource type="Resource" uid="uid://c80hyjk4w630b" path="res://resources/action_resources/axe.tres" id="2_g18pq"]
 [ext_resource type="Resource" uid="uid://c74a3ao4crmx4" path="res://resources/action_resources/bow.tres" id="3_1x5iv"]
-[ext_resource type="Texture2D" uid="uid://mvg03niq3af2" path="res://art/game_sprites/skeleton_100x160.jpg" id="3_e30e5"]
+[ext_resource type="Texture2D" uid="uid://mvg03niq3af2" path="res://art/game_sprites/characters/skeleton_100x160.jpg" id="3_e30e5"]
 [ext_resource type="Texture2D" uid="uid://1w3mrtb5mjkc" path="res://art/portraits/skeleton_portrait.jpg" id="3_g18pq"]
 
 [resource]

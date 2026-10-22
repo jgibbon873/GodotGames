@@ -8,7 +8,7 @@ var actions: Array[ActionResource] = []
 var action_set: ActionResource = null
 var alerted: Array[Character] = []
 var can_act: bool = true
-var character_type: CharacterTypeResource
+var character_resource: CharacterResource
 var display_name: String = "Character"
 var is_dead: bool = false
 var movement_remaining: int = 0
@@ -36,11 +36,11 @@ func _ready() -> void:
 		push_warning("%s: ItemComponent not ready in _ready()" % display_name)
 	if health_component == null:
 		push_warning("%s: HealthComponent not ready in _ready()" % display_name)
-	for action: ActionResource in character_type.actions:
+	for action: ActionResource in character_resource.actions:
 		actions.append(action.duplicate())
 	collision_mask = 0
-	sprite_2d.texture = character_type.appearance
-	movement_remaining = character_type.movement
+	sprite_2d.texture = character_resource.appearance
+	movement_remaining = character_resource.movement
 	health_component.died.connect(die)
 	health_component.health_changed.connect(func(c: int, m: int) -> void: health_changed.emit(c, m))
 	EventBus.acting_character_changed.connect(_on_acting_character_changed)
@@ -61,7 +61,7 @@ func _on_acting_character_changed(new_character: Character) -> void:
 func refresh() -> void:
 	action_set = null
 	can_act = true
-	movement_remaining = character_type.movement
+	movement_remaining = character_resource.movement
 	
 func spend_movement_points(distance: int) -> bool:
 	if distance >= 0 and distance <= movement_remaining:

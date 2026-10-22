@@ -1,4 +1,4 @@
-class_name CharacterTypeResource
+class_name CharacterResource
 extends Resource
 
 @export var actions: Array[ActionResource]

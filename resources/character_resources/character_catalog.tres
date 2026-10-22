@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CharacterCatalog" format=3 uid="uid://c28qoj2rk67a8"]
+
+[ext_resource type="Script" uid="uid://bd4vh1sotsjgs" path="res://resources/character_resources/character_resource.gd" id="1_d42r0"]
+[ext_resource type="Resource" uid="uid://d0go2nfduf0sk" path="res://resources/character_resources/archer.tres" id="2_5k2hc"]
+[ext_resource type="Script" uid="uid://c2xddrfual4qn" path="res://resources/character_resources/character_catalog.gd" id="2_6o7kk"]
+[ext_resource type="Resource" uid="uid://7xuow76mrpbq" path="res://resources/character_resources/skeleton.tres" id="3_txu0e"]
+[ext_resource type="Resource" uid="uid://bwjlnalfqsycm" path="res://resources/character_resources/sorceress.tres" id="4_lvteg"]
+
+[resource]
+script = ExtResource("2_6o7kk")
+characters = Dictionary[int, ExtResource("1_d42r0")]({
+0: ExtResource("2_5k2hc"),
+1: ExtResource("3_txu0e"),
+2: ExtResource("4_lvteg")
+})
+metadata/_custom_type_script = "uid://c2xddrfual4qn"

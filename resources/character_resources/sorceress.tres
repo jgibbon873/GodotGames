@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" uid="uid://c46wex1iadwe" path="res://resources/action_resources/action_resource.gd" id="1_ycyu5"]
 [ext_resource type="Resource" uid="uid://b53tgjev3by6w" path="res://resources/action_resources/eldritch_blast.tres" id="2_8ube7"]
-[ext_resource type="Script" uid="uid://bd4vh1sotsjgs" path="res://resources/character_types/character_type_resource.gd" id="2_fu6kx"]
-[ext_resource type="Texture2D" uid="uid://ctyym7p86mnkw" path="res://art/game_sprites/sorceress_100x160.jpg" id="3_13vi3"]
+[ext_resource type="Script" uid="uid://bd4vh1sotsjgs" path="res://resources/character_resources/character_resource.gd" id="2_fu6kx"]
+[ext_resource type="Texture2D" uid="uid://ctyym7p86mnkw" path="res://art/game_sprites/characters/sorceress_100x160.jpg" id="3_13vi3"]
 [ext_resource type="Texture2D" uid="uid://nxi4lfl6uia0" path="res://art/portraits/sorceress_portrait.jpg" id="4_3sn3s"]
 
 [resource]

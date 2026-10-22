@@ -6,5 +6,5 @@ const ENEMY_PORTRAIT: PackedScene = preload("uid://g2o126jq2tp0")
 func set_up_portrait(character: Character) -> void:
 	var portrait: EnemyPortrait = ENEMY_PORTRAIT.instantiate()
 	portrait.character = character
-	portrait.texture = character.character_type.portrait
+	portrait.texture = character.character_resource.portrait
 	add_child(portrait)

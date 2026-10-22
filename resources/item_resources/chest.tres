@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemResource" format=3 uid="uid://eeqd244qkra5"]
+
+[ext_resource type="Script" uid="uid://dt4v1tge58y0s" path="res://resources/item_resources/item_resource.gd" id="1_d4cv2"]
+[ext_resource type="Texture2D" uid="uid://bls6m1ax7sfjk" path="res://art/game_sprites/items/chest_100x160.png" id="2_hf80f"]
+
+[resource]
+script = ExtResource("1_d4cv2")
+item_name = "chest"
+sprite = ExtResource("2_hf80f")
+metadata/_custom_type_script = "uid://dt4v1tge58y0s"

@@ -1,5 +1,5 @@
 class_name ItemResource
 extends Resource
 
-@export var item_name: String = "Unnamed Item"
+@export var item_type: EnumService.ItemType
 @export var sprite: Texture

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8v5u06rofvir"
-path="res://.godot/imported/orc_warrior_100x150.jpg-6f6f0f4e3d9ba91a84bcecaa12c07ff8.ctex"
+uid="uid://b72w1k58o0ou7"
+path="res://.godot/imported/sorceress_2100x160.png-8f2f12ffdf49845378eb9a2c71a4a40f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/game_sprites/orc_warrior_100x150.jpg"
-dest_files=["res://.godot/imported/orc_warrior_100x150.jpg-6f6f0f4e3d9ba91a84bcecaa12c07ff8.ctex"]
+source_file="res://art/game_sprites/characters/sorceress_2100x160.png"
+dest_files=["res://.godot/imported/sorceress_2100x160.png-8f2f12ffdf49845378eb9a2c71a4a40f.ctex"]
 
 [params]
 
